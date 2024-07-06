@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testseite Pfannkuchen Rezept</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function calculate() {
+            eggs.innerHTML = `${+portions.value * 2} Eier`;
+            milk.innerHTML = `${+portions.value * 100} ml Milch`;
+            flour.innerHTML = `${+portions.value * 50} g Mehl`;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Pfannkuchen Rezept</h1>
+    <br>
+
+    <input id="portions" type="number" placeholder="Wieviele Portionen?">
+    <button onclick="calculate()">Berechnen</button>
+
+    <h2>Zutaten für gewünschte Portion</h2>
+    <ul>
+        <li id="eggs">2 Eier</li>
+        <li id="milk">100ml Milch</li>
+        <li id="flour">50g Mehl</li>
+        <li>Prise Zucker</li>
+        <li>Prise Salz</li>
+        <li>Schuss Öl (oder Butter für die Pfanne)</li>
+    </ul>
+
+    <h3>Zutaten zum Bestreichen und Bestreuen</h3>
+        <ul>
+            <li>Staubzucker</li>
+            <li>Marmelade</li>
+        </ul>
+
+    
+
+    <footer>
+        (C) 2024 - Rezeptrechner - Birgit Leitner GmbH
+    </footer>
+</body>
+</html>
